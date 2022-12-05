@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+        <div class="img-wrapper">
+            <div id="img-content">
+                <div id="img-belt">
+                </div>
+                <img src=odin-lined.png id="odin"/>
+                <p id="odin-text">ODIN</p>
+            </div>
+            <div id="footer">
+                <p id="credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unpslash</a></p>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <section id="note">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </section>
+            <section id="form-section">
+                    <form action="#">
+                        <h1>Let's do this!</h1>
+                        <section class="inputs-section">
+                            <div class="input-wrapper">
+                                <label for="name">FIRST NAME</label>     
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="surname">LAST NAME</label>     
+                                <input type="text" name="surname" id="surname">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="email">EMAIL</label>     
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="phone">PHONE NUMBER</label>     
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div class="input-wrapper password">
+                                <label for="pwd">PASSWORD</label>     
+                                <input type="password" name="password" id="pwd" onchange="passwordCompare()" required>
+                            </div>
+                            <div class="input-wrapper confirm-pwd">
+                                <label for="pwd-confirm">CONFRIM PASSWORD</label>       
+                                <input type="password" name="password-confirmation" id="pwd-confirm" onchange="passwordCompare()" required>
+                            </div>
+                            
+                        </section>
+                        <section class="submit-section">
+                            <button type="submit" class="submit-btn">Create Account</button>
+                            <p>Already have an account? <a href="#" class="login-text">Log in</a></p>
+                        </section>
+                    </form>
+            </section>
+        </div>
+       
+</body>
+</html>

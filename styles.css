@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.img-wrapper {
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: 40vw 100vh;
+    width: 40vw;
+    height: 100vh;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.left {
+    color: white;
+}
+
+#credits{
+    text-align: center;
+}
+
+#img-content{
+    min-height: calc(100vh - 20vh - 50px);
+    padding-top: 20vh;
+    position: relative;
+}
+
+#img-belt{
+    height: 150px;
+    background: black;
+    opacity: .5;
+    display: block;
+}
+
+#odin {
+    width: 100px;
+    position: absolute;
+    top: 21vh;
+    left: 8vw;
+}
+
+@font-face {
+    font-family: "MyOdinFont";
+    src: url("./Norse-Bold.otf") format("truetype");
+}
+
+#odin-text {
+    font-size: 5rem;
+    position: absolute;
+    top: 16vh;
+    left: 17vw;
+    font-family: "MyOdinFont";
+}
+
+.form-wrapper {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#note {
+    background-color: #E5E7EB;
+    height: 35vh;
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 40px 50px 40px;
+    height: 22vh;
+}
+
+label {
+    margin: 20px 0 2px 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 75%;
+    padding: 2px 10px;
+    line-height: 200%;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+h1 {
+    font-family: sans-serif;
+    padding-left: 40px;
+}
+
+.submit-section {
+    background-color: #E5E7EB;
+    height: 25vh;
+    padding: 40px 0 0 40px;
+    font-family: sans-serif;
+}
+
+.submit-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    background-color: #596D48;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.login-text {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+input:active {
+    border: 1px solid #1547ac;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-text {
+    color: red;
+    margin-top: 0;
+    font-size: small;
+    font-weight: bold;
+    font-family: sans-serif;
+}
